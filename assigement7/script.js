@@ -8,9 +8,9 @@ function getRandomImageUrl() {
       const container = document.getElementById("imageContainer");
       const spinner = document.getElementById("spinner");
 
-      container.innerHTML = "";             // Clear old images
-      container.classList.add("hidden");    // Hide the image container
-      spinner.style.display = "block";      // Show spinner
+      container.innerHTML = "";            
+      container.classList.add("hidden");    
+      spinner.style.display = "block";     
 
       let loadedCount = 0;
       for (let i = 0; i < 6; i++) {
@@ -19,13 +19,12 @@ function getRandomImageUrl() {
         img.onload = () => {
           loadedCount++;
           if (loadedCount === 6) {
-            spinner.style.display = "none";         // Hide spinner
-            container.classList.remove("hidden");   // Show images
+            spinner.style.display = "none";       
+            container.classList.remove("hidden");  
           }
         };
         container.appendChild(img);
       }
     }
 
-    // Load images on initial page load
     window.onload = loadImages;
