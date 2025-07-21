@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Simple Survey Form</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <div class="form-wrapper">
+    <div class="form-box">
+      <h1>Survey Form</h1>
+      <p>User stories survey form</p>
+      <form>
+        <div class="form-group">
+          <label for="name">Name:</label>
+          <input type="text" id="name" placeholder="Enter Name" />
+        </div>
+
+        <div class="form-group">
+          <label for="email">E-mail:</label>
+          <input type="email" id="email" placeholder="Enter E-Mail" />
+        </div>
+
+        <div class="form-group">
+          <label for="experience">Work Experience:</label>
+          <input type="number" id="experience" placeholder="Enter Number" />
+        </div>
+
+        <div class="form-group">
+          <label for="investing">Are you comfortable in investing in real estate on platform without first investigating
+            properly?</label>
+          <select id="investing">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="suggestions">Suggestions to build trusted platform:</label>
+          <textarea id="suggestions" rows="3" placeholder="Enter your suggestions..."></textarea>
+        </div>
+
+        <div class="form-group investment-options">
+          <label>You are ready to invest in:</label>
+          <label><input type="checkbox" name="investment" value="Real Estate" /> Real Estate</label>
+          <label><input type="checkbox" name="investment" value="Mutual Funds" /> Mutual Funds</label>
+          <label><input type="checkbox" name="investment" value="Crypto Currency" /> Crypto Currency</label>
+          <label><input type="checkbox" name="investment" value="Stocks & Bonds" /> Stocks & Bonds</label>
+        </div>
+
+        <div class="form-group contact-options">
+          <label>Are you ready for further contact:</label>
+          <label><input type="radio" name="contact" value="Yes" /> Yes</label>
+          <label><input type="radio" name="contact" value="No" /> No</label>
+        </div>
+
+        <div class="form-group">
+          <button type="submit">Submit</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</body>
+
+</html>
